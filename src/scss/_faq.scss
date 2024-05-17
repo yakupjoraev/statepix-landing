@@ -1,0 +1,36 @@
+.faq {
+
+  // .faq__inner
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+      row-gap: 0;
+    }
+
+  }
+
+  .section-head {
+    flex: 0 1 370px;
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 auto;
+    }
+
+  }
+
+  // .faq__accordion
+
+  &__accordion {
+    flex: 0 1 772px;
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 auto;
+    }
+
+  }
+}

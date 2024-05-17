@@ -1,0 +1,146 @@
+.products {
+
+  // .products__inner
+
+  &__inner {}
+
+  // .products__content
+
+  &__content {}
+
+  // .products__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 20px;
+    }
+
+  }
+
+  // .products__item
+
+  &__item {
+    padding: 20px;
+    border-radius: 6px;
+    background: var(--light-gray);
+
+    @media (max-width: $breakpoint768) {
+      padding: 12px;
+    }
+  }
+
+  // .products__item-header
+
+  &__item-header {
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    @media (max-width: $breakpoint768) {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  // .products__item-picture
+
+  &__item-picture {
+    text-align: center;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 30px;
+
+    @media (max-width: $breakpoint768) {
+      height: 240px;
+    }
+  }
+
+  // .products__item-pic
+
+  &__item-pic {
+    max-width: 100%;
+
+    @media (max-width: $breakpoint768) {
+      height: auto;
+    }
+  }
+
+  // .products__item-label
+
+  &__item-label {}
+
+  // .products__item-title
+
+  &__item-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: var(--black);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .products__item-footer
+
+  &__item-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  // .products__item-text
+
+  &__item-text {
+    max-width: 340px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--black);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 14px;
+    }
+  }
+
+  // .products__item-btn
+
+  &__item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    background: linear-gradient(133deg, #df87f1 0%, #219f70 100%);
+    border-radius: 6px;
+
+    img {
+      transition: transform 0.2s linear;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        img {
+          transform: translateX(3px);
+        }
+      }
+    }
+  }
+
+  // .products__item-icon
+
+  &__item-icon {}
+}
