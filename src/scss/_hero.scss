@@ -84,6 +84,7 @@
   // .hero__btn
 
   &__btn {
+    height: 48px;
     width: fit-content;
 
     @media (max-width: $breakpoint768) {

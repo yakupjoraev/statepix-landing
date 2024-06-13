@@ -349,7 +349,7 @@ body.locked {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: -0.02em;
   color: var(--black);
   -webkit-transition: 0.2s linear;
@@ -442,6 +442,7 @@ body.locked {
 }
 
 .hero__btn {
+  height: 48px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
