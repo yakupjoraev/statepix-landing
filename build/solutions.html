@@ -19,24 +19,79 @@
       <div class="navbar">
         <div class="logo">
           <a class="logo__link" href="#header">
-            <img class="logo__img" width="210" height="44" src="./img/logo.svg" alt="logo">
+            <img class="logo__img" width="100" height="22" src="./img/logo.svg" alt="logo">
           </a>
         </div>
 
         <ul class="menu">
-          <li class="menu__item"><a href="#products" class="menu__item-link" data-scroll>Продукты</a></li>
-          <li class="menu__item"><a href="#steps" class="menu__item-link" data-scroll>Технологии</a></li>
-          <li class="menu__item"><a href="#safety" class="menu__item-link" data-scroll>Безопасность</a></li>
-          <li class="menu__item"><a href="#faq" class="menu__item-link" data-scroll>Решения</a></li>
-          <li class="menu__item"><a href="#header" class="menu__item-link" data-scroll>Компания</a></li>
+          <li class="menu__item dropdown menu__item--main">
+            <a href="#" class="menu__item-link" onclick="event.preventDefault()">
+              Products
 
-          <li class="menu__item menu__item--ml menu__item--enter"><a href="#" class="menu__item-link"
-              data-scroll>Войти</a></li>
-          <li class="menu__item "><a href="#" class="menu__item-link btn" data-scroll>Зарегистрироваться</a></li>
-          <li class="menu__item menu__item--languages">
+              <img src="./img/icons/CaretDown.svg" alt="arrow icon">
+            </a>
+
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a class="menu__sublink" href="#">Buying real estate</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">Shared purchase of real estate</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">P2P</a> </li>
+            </ul>
+          </li>
+
+          <li class="menu__item dropdown menu__item--main">
+            <a href="#" class="menu__item-link" onclick="event.preventDefault()">
+              Solutions
+
+              <img src="./img/icons/CaretDown.svg" alt="arrow icon">
+            </a>
+
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a class="menu__sublink" href="#">For Institutional Investors</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">For Private Investors</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">For Personal Use</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">For Rieltors</a> </li>
+            </ul>
+          </li>
+
+          <li class="menu__item dropdown menu__item--main">
+            <a href="#" class="menu__item-link" onclick="event.preventDefault()">
+              Company
+
+              <img src="./img/icons/CaretDown.svg" alt="arrow icon">
+            </a>
+
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a class="menu__sublink" href="#">About Us</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">Documnets</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">Contacts</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">Partners</a> </li>
+            </ul>
+          </li>
+
+
+          <li class="menu__item dropdown menu__item--main">
+            <a href="#" class="menu__item-link" onclick="event.preventDefault()">
+              Security
+
+              <img src="./img/icons/CaretDown.svg" alt="arrow icon">
+            </a>
+
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a class="menu__sublink" href="#">Legal security</a> </li>
+              <li class="menu__subitem"><a class="menu__sublink" href="#">Сryptographic security</a> </li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__item--main"><a href="#" class="menu__item-link">Technology</a></li>
+
+          <li class="menu__item  menu__item--ml menu__item--languages">
             <a href="#" class="menu__item-link" data-scroll>
               <img class="menu__item-img" src="./img/icons/globe.svg" alt="globe icon"></a>
           </li>
+          <li class="menu__item menu__item--enter"><a href="#" class="menu__item-link" data-scroll>LOG
+              IN</a></li>
+          <li class="menu__item "><a href="#" class="menu__item-link btn" data-scroll>REGISTER NOW</a></li>
+
         </ul>
         <div class="burger">
           <span></span>
@@ -239,35 +294,83 @@
 
     <!-- Footer -->
     <footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <a class="footer__logo-icon" href="#"><img src="./img/logo.svg" width="100" height="21" alt="logo"></a>
+
+        <p class="footer__logo-descr">
+          Lorem ipsum dolor sit amet consectetur. Sed nullam tempus amet neque pretium diam et. Nisl magna pretium
+          facilisis nec donec. Nascetur consequ
+        </p>
+      </div>
+
       <nav class="footer__nav">
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item footer__nav-item--label">Следите за нами</li>
-          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Twitter</a></li>
-          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Linked In</a></li>
-          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Instagram</a></li>
+        <ul class="footer__list">
+          <li class="footer__item footer__item-head">Products</li>
+          <li class="footer__item"> <a class="footer__link" href="#">Buying real estate </a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Shared purchase of real estate</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">P2P</a></li>
         </ul>
 
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item footer__nav-item--label">Главная</li>
-          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Продукты</a></li>
-          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Технологии и безопасность</a></li>
-          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Решения</a></li>
-          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Компания</a></li>
-          <li class="footer__nav-item"><a class="footer__nav-link" href="#">FAQ</a></li>
+        <ul class="footer__list">
+          <li class="footer__item footer__item-head">Company</li>
+          <li class="footer__item"> <a class="footer__link" href="#">About Us</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Documnets</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Contacts</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Partners</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item footer__item-head">Solutions</li>
+          <li class="footer__item"> <a class="footer__link" href="#">For Institutional Investors </a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">For Private Investors</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">For Personal Use</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">For Rieltors</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item footer__item-head">Security </li>
+          <li class="footer__item"> <a class="footer__link" href="#"> Legal security</a></li>
+          <li class="footer__item"> <a class="footer__link" href="#">Сryptographic security</a></li>
         </ul>
       </nav>
 
-      <form action="#" class="footer__contacts">
-        <h3 class="footer__title">Связаться с нами</h3>
+      <div class="footer__block">
+        <img class="footer__block-icon" width="15" height="21" src="./img/icons/Union.svg" alt="Union icon">
+        <h4 class="footer__block-label">StatePix Technology</h4>
+        <p class="footer__block-text">Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+    </div>
 
-        <div class="footer__group">
-          <input class="footer__input" type="email" placeholder="Почта">
+    <div class="footer__bottom">
+      <p class="footer__copy">@ 2024. All rights reserved</p>
 
-          <button type="submit" class="footer__btn btn">Отправить</button>
-        </div>
-      </form>
+      <ul class="footer__socilas">
+        <li class="footer__social">
+          <a class="footer__social-link" href="#">
+            <img src="./img/icons/mage_x.svg" width="24" height="24" alt="social icon">
+          </a>
+        </li>
+
+        <li class="footer__social">
+          <a class="footer__social-link" href="#">
+            <img src="./img/icons/ri_instagram-fill.svg" width="24" height="24" alt="social icon">
+          </a>
+        </li>
+
+        <li class="footer__social">
+          <a class="footer__social-link" href="#">
+            <img src="./img/icons/mingcute_telegram-fill.svg" width="24" height="24" alt="social icon">
+          </a>
+        </li>
+
+        <li class="footer__social">
+          <a class="footer__social-link" href="#">
+            <img src="./img/icons/ri_facebook-fill.svg " width="24" height="24" alt="social icon">
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </footer>
