@@ -4,17 +4,22 @@
 }
 
 .accordion__item {
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid #F1F4F7;
 
   &:first-child {
-    border-top: 1px solid var(--grey);
+    border-top: 1px solid #F1F4F7;
   }
 }
 
 .accordion__item.active .accordion__header {}
 
+.accordion__item.active .accordion__header-btn {
+  background: linear-gradient(73deg, #df87f1 0%, #219f70 100%);
+}
+
 .accordion__item.active .accordion__header-btn img {
   transform: rotate(180deg);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(139deg) brightness(103%) contrast(101%);
 }
 
 .accordion__header {
@@ -69,10 +74,11 @@
   user-select: none;
   pointer-events: none;
   opacity: 0;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
   line-height: 140%;
-  color: var(--black-60);
+  color: #718096;
 
   transition: 0.2s linear;
 

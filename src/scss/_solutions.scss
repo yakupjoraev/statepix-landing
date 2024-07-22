@@ -1,0 +1,152 @@
+.solutions {
+  margin: 140px 0;
+
+  @media (max-width: $breakpoint992) {
+    margin: 80px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin: 60px 0;
+  }
+
+  // .solutions__inner
+
+  &__inner {}
+
+  // .solutions__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 140px;
+
+    @media (max-width: $breakpoint992) {
+      row-gap: 80px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 60px;
+    }
+
+  }
+
+  // .solutions__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      row-gap: 40px;
+      align-items: flex-start;
+
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+
+  }
+
+  // .solutions__item-picture
+
+  &__item-picture {
+    flex: 0 1 auto;
+
+    @media (max-width: $breakpoint768) {
+      margin: 0 auto;
+    }
+
+  }
+
+  // .solutions__item-pic
+
+  &__item-pic {
+
+    @media (max-width: $breakpoint992) {
+      max-width: 100%;
+      height: auto;
+    }
+
+  }
+
+  // .solutions__item-info
+
+  &__item-info {
+    flex: 0 1 584px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 340px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+
+  }
+
+  // .solutions__item-label
+
+  &__item-label {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    color: var(--black);
+
+    @media (max-width: $breakpoint992) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+
+  }
+
+  // .solutions__sublist
+
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 16px;
+    }
+
+  }
+
+  // .solutions__subitem
+
+  &__subitem {
+    position: relative;
+    padding-left: 28px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--black);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: linear-gradient(135deg, #10ad74 15%, #1288aa 50%);
+    }
+  }
+}

@@ -11,22 +11,76 @@
 
 <body class="main__body">
   <div class="wrapper">
-    <!-- Header -->
-    @@include('./html/_header.html')
+    <div class="container">
+      <div class="pages">
+        <ul class="pages__list">
 
-    <!-- Main Page -->
-    <main>
-      @@include('./html/_hero.html')
-      @@include('./html/_steps.html')
-      @@include('./html/_tehno.html')
-      @@include('./html/_products.html')
-      @@include('./html/_safety.html')
-      @@include('./html/_faq.html')
-      @@include('./html/_banner.html')
-    </main>
+          <li class="pages__item">
+            <a class="pages__link" href="main.html" target="_blank">
+              Main
+            </a>
+          </li>
 
-    <!-- Footer -->
-    @@include('./html/_footer.html')
+
+          <b>
+            <br />
+            <br />
+
+            /*************************************************/
+            NEW PAGES
+            /*************************************************/
+
+            <br />
+            <br />
+          </b>
+
+          <li class="pages__item">
+            <a class="pages__link" href="technology.html" target="_blank">
+              Technology
+            </a>
+          </li>
+
+          <li class="pages__item">
+            <a class="pages__link" href="security.html" target="_blank">
+              Security
+            </a>
+          </li>
+
+          <li class="pages__item">
+            <a class="pages__link" href="solutions.html" target="_blank">
+              Solutions
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <style>
+      .pages__list {
+        display: grid;
+        gap: 20px;
+        padding: 50px 0;
+      }
+
+      .pages__item {
+        display: grid;
+      }
+
+      .pages__link {
+        padding: 20px;
+        background-color: var(--light-gray);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--black);
+      }
+
+      .pages__link:hover {
+        background: var(--violent-dark-background);
+        color: var(--black);
+      }
+    </style>
+
   </div>
 
 </body>
